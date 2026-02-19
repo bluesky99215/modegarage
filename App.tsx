@@ -5,8 +5,8 @@ import {
   Settings, ArrowUpRight, Fuel, Palette, Calendar, MessageSquare, CheckCircle2,
   Instagram, Youtube
 } from 'lucide-react';
-import Layout from './components/Layout';
-import AdminPanel from './components/AdminPanel';
+import Layout from './Layout';
+import AdminPanel from './AdminPanel';
 import { Language, BlogPost, SiteContent, SiteSettings } from './types';
 import { INITIAL_CONTENT, INITIAL_POSTS, INITIAL_SETTINGS, ANALYTICS_DATA, YOUTUBE_VIDEOS } from './constants';
 

@@ -1,24 +1,26 @@
 {
-  "name": "모드개러지-(modegarage)---premium-automotive-service",
+  "name": "modegarage-web-platform",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "tsc"
+    "lint": "eslint . --ext ts,tsx"
   },
   "dependencies": {
+    "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "@google/genai": "^1.41.0",
-    "lucide-react": "^0.574.0",
-    "recharts": "^3.7.0",
-    "react": "^19.2.4"
+    "@google/generative-ai": "^0.21.0", 
+    "lucide-react": "^0.474.0",
+    "recharts": "^2.15.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }

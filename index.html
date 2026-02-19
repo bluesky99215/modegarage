@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,49 +8,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', 'Noto+Sans+KR', sans-serif;
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
             background-color: #000;
             color: #fff;
             margin: 0;
             overflow-x: hidden;
         }
-        /* 럭셔리한 붉은색 스크롤바 */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #000; }
         ::-webkit-scrollbar-thumb { background: #ff0000; border-radius: 4px; }
 
-        /* 히어로 섹션 서서히 커지는 효과 */
         @keyframes zoom-out {
             from { transform: scale(1.1); }
             to { transform: scale(1.0); }
         }
         .animate-zoom { animation: zoom-out 20s infinite alternate; }
-        
-        /* 프리미엄 광택 효과 */
         .hero-glow { box-shadow: 0 0 50px rgba(255, 0, 0, 0.2); }
-        
-        /* 텍스트 그라데이션 */
         .text-red-gradient {
             background: linear-gradient(to right, #ff0000, #ff4d4d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.574.0",
-    "recharts": "https://esm.sh/recharts@^3.7.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
-  }
-}
-</script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19.2.4",
+        "react/": "https://esm.sh/react@19.2.4/",
+        "react-dom": "https://esm.sh/react-dom@19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@19.2.4/",
+        "@google/generative-ai": "https://esm.sh/@google/generative-ai@0.21.0",
+        "lucide-react": "https://esm.sh/lucide-react@0.474.0",
+        "recharts": "https://esm.sh/recharts@2.15.0"
+      }
+    }
+    </script>
 </head>
 <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx">
+    <script type="module" src="./src/main.tsx"></script>
 </body>
 </html>

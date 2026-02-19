@@ -1,0 +1,7 @@
+{
+  "name": "모드개러지 (ModeGarage) - Premium Automotive Service",
+  "description": "A high-end automotive service and branding platform with a built-in CMS and admin dashboard. Features black and red luxury design, bilingual support, and SEO tools.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
